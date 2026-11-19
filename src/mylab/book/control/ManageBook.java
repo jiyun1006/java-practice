@@ -36,6 +36,10 @@ public class ManageBook {
 			System.out.println(publications[i].getTitle() + " 변경 후 가격: " + afterPrice + "원");
 			System.out.println("차액: " + (beforePrice - afterPrice) + "원");
 		}
+
+		// 통계 분석
+		StatisticsAnalyzer analyzer = new StatisticsAnalyzer();
+		analyzer.printStatistics(publications);
 	}
 
 	public static void modifyPrice(Publication publication) {
